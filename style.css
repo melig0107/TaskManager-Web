@@ -285,3 +285,39 @@ body {
     gap: 8px;
   }
 }
+/* ===================================================
+   Adaptación responsiva para móviles
+   Colaboración: Daniela Aidee Roman Arevalo
+   =================================================== */
+@media (max-width: 600px) {
+  body {
+    padding: 16px 10px;
+  }
+
+  .container {
+    padding: 20px 16px;
+    border-radius: 10px;
+  }
+
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .task-item {
+    padding: 10px 12px;
+  }
+
+  .task-text {
+    font-size: 0.9rem;
+  }
+}
