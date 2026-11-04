@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaskManager Web</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts opcional para mejor estética -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header class="app-header">
-      <h1>📋 TaskManager Web</h1>
-      <p class="subtitle">Organiza tus actividades pendientes de forma sencilla y eficiente</p>
-    </header>
+    <div class="container">
+        <header class="app-header">
+            <h1>TaskManager Web</h1>
+            <p class="subtitle">Organiza tus actividades pendientes de forma sencilla y eficiente</p>
+        </header>
 
-    <main class="app-main">
-      <!-- Formulario para captura de tareas -->
-      <form id="task-form" class="task-form">
-        <div class="input-group">
-          <input 
-            type="text" 
-            id="task-input" 
-            placeholder="¿Qué tarea tienes pendiente hoy?" 
-            autocomplete="off" 
-            required
-          >
-          <button type="submit" id="add-btn" class="btn btn-primary">
-            <span>Agregar</span>
-          </button>
-        </div>
-      </form>
+        <main class="app-main">
+            <!-- Formulario para captura de tareas -->
+            <form id="task-form" class="task-form">
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="Escribe una nueva tarea..." autocomplete="off" required>
+                    <button type="submit" id="add-btn" class="btn btn-primary">Agregar</button>
+                </div>
+            </form>
 
-      <!-- Panel de estadísticas rápidas -->
-      <section class="task-stats">
-        <span id="total-tasks">Total: 0</span>
-        <span id="completed-tasks">Completadas: 0</span>
-      </section>
+            <!-- Panel de estadísticas rápidas -->
+            <section class="task-stats" aria-label="Estadísticas de tareas">
+                <div class="stat-card">
+                    <span class="stat-label">Total</span>
+                    <span id="total-tasks" class="stat-count">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Completadas</span>
+                    <span id="completed-tasks" class="stat-count">0</span>
+                </div>
+            </</section>
 
-      <!-- Listado de tareas -->
-      <section class="task-list-section">
-        <ul id="task-list" class="task-list">
-          <!-- Las tareas se insertan dinámicamente con JavaScript -->
-        </ul>
-        <div id="empty-state" class="empty-state">
-          <p>No tienes tareas pendientes. ¡Buen trabajo! 🎉</p>
-        </div>
-      </section>
-    </main>
+            <!-- Listado de tareas -->
+            <section class="task-list-section">
+                <ul id="task-list" class="task-list">
+                    <!-- Las tareas se insertan dinámicamente con JavaScript -->
+                </ul>
+                <div id="empty-state" class="empty-state">
+                    <p>No tienes tareas pendientes. Todo al día.</p>
+                </div>
+            </section>
+        </main>
 
-    <footer class="app-footer">
-      <p>Desarrollado con Git &amp; GitHub &bull; Desarrollo Web Integral</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
+        <footer class="app-footer">
+            <p>Desarrollado con Git &amp; GitHub &bull; Desarrollo Web Integral</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
