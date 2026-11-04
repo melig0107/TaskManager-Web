@@ -1,5 +1,7 @@
 // ===================================================
-// TaskManager Web - Lógica JavaScript
+// TaskManager Web - Módulo de Gestión de Tareas
+// Responsable: Daniela Roman (Integrante B)
+// Rama: feature/tareas
 // ===================================================
 
 document.addEventListener('DOMContentLoaded', () => {
