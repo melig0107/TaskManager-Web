@@ -5,7 +5,7 @@ Desarrollar una aplicación web para registrar y organizar tareas pendientes.
 
 ## Integrantes
 - Melissa Garcia Hernandez
-- Nombre del segundo integrante
+- Daniela Aidee Roman Arevalo
 
 ## Tecnologías utilizadas
 - HTML
