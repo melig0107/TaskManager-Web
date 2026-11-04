@@ -125,6 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
     taskInput.focus();
   });
 
+  // Atajo de teclado: limpiar campo con tecla Escape
+  taskInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      taskInput.value = '';
+    }
+  });
+
   // Render inicial
   renderTasks();
 });
